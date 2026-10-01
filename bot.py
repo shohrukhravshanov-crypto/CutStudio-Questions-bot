@@ -27,7 +27,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     text = update.effective_message.text.lower().strip()
 
-    if any(w in text for w in ("цен", "стоим", "прайс", "сколько стоит", "сколько"):
+    if any(w in text for w in ("цен", "стоим", "прайс", "сколько стоит", "сколько")):
         await reply(update, PRICES)
         return
 
